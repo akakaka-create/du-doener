@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Roter Knopf</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            font-size: 40px;
+            padding: 40px 80px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        #content {
+            margin-top: 40px;
+            text-align: center;
+            display: none;
+        }
+
+        img {
+            max-width: 500px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showContent()">KLICK MICH</button>
+
+    <div id="content">
+        <h1>Danijela du döner</h1>
+        <img src="doener.png" alt="Döner Bild">
+    </div>
+
+    <script>
+        function showContent() {
+            document.getElementById("content").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
